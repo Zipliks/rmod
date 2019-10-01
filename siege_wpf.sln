@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "siege_wpf", "siege_wpf\siege_wpf.csproj", "{B35AB6B3-C1A9-46A7-B985-508100EA5737}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Debug|x64.ActiveCfg = Debug|x64
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Debug|x64.Build.0 = Debug|x64
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Release|x64.ActiveCfg = Release|x64
+		{B35AB6B3-C1A9-46A7-B985-508100EA5737}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {496901AF-93D2-43F5-910C-E7BF8C215F90}
+	EndGlobalSection
+EndGlobal

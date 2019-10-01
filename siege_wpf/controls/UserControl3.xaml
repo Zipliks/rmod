@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="siege_wpf.controls.UserControl3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:siege_wpf.controls"
+             xmlns:cpb="clr-namespace:siege_wpf.circClasses"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="592" d:DesignWidth="650">
+    <ScrollViewer Style="{StaticResource ScrollViewerStyle}" BorderBrush="#032b86"  Foreground="{StaticResource MainAccentColor}" CanContentScroll="True" VerticalScrollBarVisibility="Auto">
+        <Grid Margin="0,0,0,0">
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="siege_wpf.controls.UserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:siege_wpf.controls"
+             xmlns:cpb="clr-namespace:siege_wpf.circClasses"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="592" d:DesignWidth="650" Initialized="uc2_init">
+    <Grid>
+
+        <!--<interop:AirspaceDecorator AirspaceMode="Redirect"
+                           Background="White"
+                           IsInputRedirectionEnabled="True"
+                           IsOutputRedirectionEnabled="True">
+            <WindowsFormsHost x:Name="winFormsHost"/>
+
+        </interop:AirspaceDecorator>-->
+        
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,44,0,0" SnapsToDevicePixels="False">
+            <Run FontFamily="Segoe UI" FontSize="24" FontWeight="Bold">
+                Thanks To:
+            </Run>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,134,0,0" SnapsToDevicePixels="False" TextAlignment="Center" Block.TextAlignment="Left"
+                   Width="351" TextWrapping="Wrap">
+            
+            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—  for the creation of this guide and putting out constant updates to files and not dying of exhaustion and salt overdose"/>
+            
+            <LineBreak/>
+            <LineBreak/>     
+            
+            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—  for initial correct of English in guide"/>
+            
+            <LineBreak/>
+            <LineBreak/>
+            
+            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   for rewriting the guide, editing, constructive criticism, large amounts of salt and pistol rounds in the legs for every camera shot :^)"/>
+            
+            <LineBreak/>
+            <LineBreak/>
+            
+            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   In-house code writer with magical fingers for creating the updater utility"/>
+
+            <LineBreak/>
+            <LineBreak/>
+            
+            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   for all the feedback. GLHF and don't be toxic!"/>
+        </TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,134,0,0" SnapsToDevicePixels="False" TextAlignment="Center" Block.TextAlignment="Left"
+                   Width="120" TextWrapping="Wrap">
+            
+            <TextBlock Margin="0,1,0,0">
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/profiles/76561197988023277/" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}" >
+                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Zipliks"/></Hyperlink>
+            </TextBlock>
+            
+            <LineBreak/>
+            
+            <TextBlock Margin="0,53,0,0">
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/CurseYouRichaaaaaards/" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}" >
+                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="The Red Menace"/></Hyperlink>
+            </TextBlock>
+            
+            <LineBreak/>
+            
+            <TextBlock Margin="0,18,0,0">
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}">
+                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Morpho"/></Hyperlink>
+            </TextBlock>
+            
+            <LineBreak/>
+            
+            <TextBlock Margin="0,52,0,0">
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}">
+                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="ImMobile"/></Hyperlink> 
+            </TextBlock>
+            
+            <LineBreak/>
+            
+            <TextBlock Margin="0,34.5,0,0">
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}">
+                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="YOU"/></Hyperlink> 
+            </TextBlock>
+        </TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,130,0,0" SnapsToDevicePixels="False" Block.TextAlignment="Left">
+            
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/profiles/76561197988023277/" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}" ><InlineUIContainer>
+                <materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,0,0,0" />
+            </InlineUIContainer><Run Text=" "/></Hyperlink> 
+            
+            <LineBreak/>
+            
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/CurseYouRichaaaaaards/" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}" ><InlineUIContainer>
+                <materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,43,0,0"/>
+            </InlineUIContainer><Run Text=" "/></Hyperlink> 
+            
+            <LineBreak/>
+            
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}"><InlineUIContainer>
+                <materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,7,0,0"/>
+            </InlineUIContainer><Run Text=" "/></Hyperlink> 
+            
+            <LineBreak/>
+            
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}"><InlineUIContainer>
+                <materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,42,0,0"/>
+            </InlineUIContainer><Run Text=" "/></Hyperlink> 
+
+            <LineBreak/>
+            
+            <Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}"><InlineUIContainer><materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Discord" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,25,0,0"/>
+                </InlineUIContainer><Run Text=" "/></Hyperlink>
+        </TextBlock>
+        
+    </Grid>
+</UserControl>
+

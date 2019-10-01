@@ -1,0 +1,73 @@
+﻿<Application x:Class="siege_wpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:siege_wpf"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="circClasses/styles.xaml" />
+                <ResourceDictionary Source="circClasses/Scrollbar.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Snackbar.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+
+            
+
+            <SolidColorBrush x:Key="Normal_Color" Color="#FF673AB7"/>
+            <SolidColorBrush x:Key="Normal_Color_res" Color="#FF9A77DA"/>
+            <SolidColorBrush x:Key="Error_Color" Color="#FFC71818"/>
+            <SolidColorBrush x:Key="Warning_Color" Color="#FFDE910A"/>
+            <!-- #FFFFDC00  -->
+            <SolidColorBrush x:Key="Updated_Color" Color="#FF2AA43B"/>
+
+            <SolidColorBrush x:Name="mainAccentColor" x:Key="MainAccentColor" Color="#FF673AB7" />
+            <SolidColorBrush x:Name="mainDockColor" x:Key="MainDockColor" Color="#FF673AB7" Changed="dockColor_Changed" />
+            <SolidColorBrush x:Key="MainDockColor2" Color="{Binding MainDockColor}"/>
+
+            <SolidColorBrush x:Key="MainDockCloseButtonBack" Color="{Binding MainDockColor}"/>
+            <SolidColorBrush x:Key="MainDockDiscordButtonBack" Color="{Binding MainDockColor}"/>
+            <SolidColorBrush x:Key="MainDockMinButtonBack" Color="{Binding MainDockColor}"/>
+            
+            
+            
+            <SolidColorBrush x:Key="CloseButtonHoverBrush" Color="#AAFF0000"/>
+            <SolidColorBrush x:Key="DockButtonHoverBrush" Color="#AA000000"/>
+
+            <SolidColorBrush x:Key="LeftDockHomeButtonBack" Color="{Binding MainDockColor}"/>
+            
+            <SolidColorBrush x:Key="LeftDockButtonSelectedBrush" Color="#77000000"/>
+            <Color x:Key="LeftDockHomeColor"/>
+            <Color x:Key="LeftDockHomeHoverColor"/>
+            <Color x:Key="LeftDockInfoColor"/>
+            <Color x:Key="LeftDockInfoHoverColor"/>
+            
+            
+            <Color x:Key="CloseButtonHoverColor"/>
+            <Color x:Key="DockButtonHoverColor"/>
+
+            <Color x:Key="MainDockColorCol"/>
+            
+
+
+            <!-- primary -->
+            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#FFA8A8A8"/>
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#FF673AB7"/>
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="#FF1B8747"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="#FFFFFF"/>
+            <!-- accent -->
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#FF0BF000"/>
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="#FFFFFF"/>
+
+            <SolidColorBrush x:Key="MaterialDesignBody" Color="#DD000000"/>
+            <SolidColorBrush x:Key="MaterialDesignPaper" Color="#FFFAFAFA"/>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
