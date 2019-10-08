@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\Projects\Updater\siege_wpf\obj\Release\
+D:\Projects\Updater\siege_wpf\obj\Debug\
 siege_wpf
 none
 false
-TRACE
+DEBUG;TRACE
 D:\Projects\Updater\siege_wpf\App.xaml
 6104007681
 

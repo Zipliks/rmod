@@ -17,7 +17,7 @@
             <WindowsFormsHost x:Name="winFormsHost"/>
 
         </interop:AirspaceDecorator>-->
-        
+
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,44,0,0" SnapsToDevicePixels="False">
             <Run FontFamily="Segoe UI" FontSize="24" FontWeight="Bold">
                 Thanks To:
@@ -46,91 +46,58 @@
             <LineBreak/>
             <LineBreak/>
             
+            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   Graphic designer of highest quality, top notch screenshot taker. Most sought after bachelor of the whole village"/>
+            
+            <LineBreak/>
+            <LineBreak/>
+            
             <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   for all the feedback. GLHF and don't be toxic!"/>
         </TextBlock>
 
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,134,0,0" SnapsToDevicePixels="False" TextAlignment="Center" Block.TextAlignment="Left"
-                   Width="120" TextWrapping="Wrap">
+                   Width="120" TextWrapping="Wrap"><InlineUIContainer>
             
-            <TextBlock Margin="0,1,0,0">
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/profiles/76561197988023277/" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}" >
-                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Zipliks"/></Hyperlink>
-            </TextBlock>
+                <TextBlock Margin="0,1,0,0"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/profiles/76561197988023277/" RequestNavigate="Hyperlink_RequestNavigate"
+                        TextDecorations="{x:Null}" ><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Zipliks"/></Hyperlink></TextBlock>
             
-            <LineBreak/>
+            </InlineUIContainer><LineBreak/><InlineUIContainer>
             
-            <TextBlock Margin="0,53,0,0">
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/CurseYouRichaaaaaards/" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}" >
-                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="The Red Menace"/></Hyperlink>
-            </TextBlock>
+                <TextBlock Margin="0,53,0,0"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/CurseYouRichaaaaaards/" RequestNavigate="Hyperlink_RequestNavigate"
+                        TextDecorations="{x:Null}" ><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="The Red Menace"/></Hyperlink></TextBlock>
             
-            <LineBreak/>
-            
-            <TextBlock Margin="0,18,0,0">
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}">
-                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Morpho"/></Hyperlink>
-            </TextBlock>
-            
-            <LineBreak/>
-            
-            <TextBlock Margin="0,52,0,0">
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}">
-                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="ImMobile"/></Hyperlink> 
-            </TextBlock>
-            
-            <LineBreak/>
-            
-            <TextBlock Margin="0,34.5,0,0">
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}">
-                <Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="YOU"/></Hyperlink> 
-            </TextBlock>
-        </TextBlock>
+            </InlineUIContainer><LineBreak/><LineBreak/><LineBreak/><LineBreak/></TextBlock>
 
-        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,130,0,0" SnapsToDevicePixels="False" Block.TextAlignment="Left">
-            
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/profiles/76561197988023277/" RequestNavigate="Hyperlink_RequestNavigate"
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,130,0,0" SnapsToDevicePixels="False" Block.TextAlignment="Left"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/profiles/76561197988023277/" RequestNavigate="Hyperlink_RequestNavigate"
                        TextDecorations="{x:Null}" ><InlineUIContainer>
                 <materialDesign:PackIcon SnapsToDevicePixels="False"
                     Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,0,0,0" />
-            </InlineUIContainer><Run Text=" "/></Hyperlink> 
-            
-            <LineBreak/>
-            
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/CurseYouRichaaaaaards/" RequestNavigate="Hyperlink_RequestNavigate"
+            </InlineUIContainer><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/CurseYouRichaaaaaards/" RequestNavigate="Hyperlink_RequestNavigate"
                        TextDecorations="{x:Null}" ><InlineUIContainer>
                 <materialDesign:PackIcon SnapsToDevicePixels="False"
                     Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,43,0,0"/>
-            </InlineUIContainer><Run Text=" "/></Hyperlink> 
-            
-            <LineBreak/>
-            
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
+            </InlineUIContainer><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
                        TextDecorations="{x:Null}"><InlineUIContainer>
                 <materialDesign:PackIcon SnapsToDevicePixels="False"
                     Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,7,0,0"/>
-            </InlineUIContainer><Run Text=" "/></Hyperlink> 
-            
-            <LineBreak/>
-            
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
+            </InlineUIContainer><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
                        TextDecorations="{x:Null}"><InlineUIContainer>
                 <materialDesign:PackIcon SnapsToDevicePixels="False"
                     Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,42,0,0"/>
-            </InlineUIContainer><Run Text=" "/></Hyperlink> 
+            </InlineUIContainer><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}"><Run Text=" "/></Hyperlink></TextBlock>
+        <materialDesign:PackIcon SnapsToDevicePixels="False"
+            Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,359,0,204" RenderTransformOrigin="0.963,-0.08"/>
+        <materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Discord" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,431,0,132" RenderTransformOrigin="0.717,2.277"/>
+        <TextBlock Margin="103,441,518,132"><Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="YOU"/></Hyperlink></TextBlock>
+        <TextBlock Margin="100,367,449,206"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/zipitero/" RequestNavigate="Hyperlink_RequestNavigate"
+                        TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Violet2Phoenix"/></Hyperlink></TextBlock>
+        <TextBlock Margin="103,314,483,259"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
+                        TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="ImMobile"/></Hyperlink></TextBlock>
+        <TextBlock Margin="100,242,496,331"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
+                        TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Morpho"/></Hyperlink></TextBlock>
 
-            <LineBreak/>
-            
-            <Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}"><InlineUIContainer><materialDesign:PackIcon SnapsToDevicePixels="False"
-                    Kind="Discord" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,25,0,0"/>
-                </InlineUIContainer><Run Text=" "/></Hyperlink>
-        </TextBlock>
-        
     </Grid>
 </UserControl>
 

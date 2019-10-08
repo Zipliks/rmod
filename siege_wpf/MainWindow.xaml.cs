@@ -78,11 +78,8 @@ namespace siege_wpf
 
             ChangeDockColors();
 
-            //url by default
-            //json_urls.Add("http://bit.ly/2H4GjDt");
-            //json_urls.Add("http://bit.ly/2OU6eV2");
-            json_urls.Add("https://gist.githubusercontent.com/Zipliks/ccffd954c6a687f3b7b54a60bd6a12f5/raw/94bd2aa0d4a32b793ffd67da7b596c16ba2459d9/updater.json");
-            //json_urls.Add("https://pastebin.com/raw/9VJ8ZNsT");
+            //url by default           
+            json_urls.Add("https://gist.githubusercontent.com/Zipliks/ccffd954c6a687f3b7b54a60bd6a12f5/raw");
 
 
             //statusBox.Text = "Waiting for command";
