@@ -7,11 +7,11 @@ using System.Windows;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Language Patch || RB6 Siege")]
-[assembly: AssemblyDescription("Language Patch for RainbowSix Siege. Can install into your game audio and text of several languages.")]
+[assembly: AssemblyTitle("RMod")]
+[assembly: AssemblyDescription("RMod for Rainbow Six: Siege")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("-=Alex Novikov=-")]
-[assembly: AssemblyProduct("Language Patch || RB6 Siege")]
+[assembly: AssemblyCompany("-=Alex Novikov=- & RMod Team")]
+[assembly: AssemblyProduct("RMod")]
 [assembly: AssemblyCopyright("Alex Novikov Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
