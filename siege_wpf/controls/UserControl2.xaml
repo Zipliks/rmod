@@ -18,41 +18,9 @@
 
         </interop:AirspaceDecorator>-->
 
-        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,44,0,0" SnapsToDevicePixels="False">
-            <Run FontFamily="Segoe UI" FontSize="24" FontWeight="Bold">
-                Thanks To:
-            </Run>
-        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,44,0,0" SnapsToDevicePixels="False"><Run FontWeight="Bold" FontSize="24" FontFamily="Segoe UI" Text="Thanks to:"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,134,0,0" SnapsToDevicePixels="False" TextAlignment="Center" Block.TextAlignment="Left"
-                   Width="351" TextWrapping="Wrap">
-            
-            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—  for the creation of this guide and putting out constant updates to files and not dying of exhaustion and salt overdose"/>
-            
-            <LineBreak/>
-            <LineBreak/>     
-            
-            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—  for initial correct of English in guide"/>
-            
-            <LineBreak/>
-            <LineBreak/>
-            
-            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   for rewriting the guide, editing, constructive criticism, large amounts of salt and pistol rounds in the legs for every camera shot :^)"/>
-            
-            <LineBreak/>
-            <LineBreak/>
-            
-            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   In-house code writer with magical fingers for creating the updater utility"/>
-
-            <LineBreak/>
-            <LineBreak/>
-            
-            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   Graphic designer of highest quality, top notch screenshot taker. Most sought after bachelor of the whole village"/>
-            
-            <LineBreak/>
-            <LineBreak/>
-            
-            <Run FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="—   for all the feedback. GLHF and don't be toxic!"/>
-        </TextBlock>
+                   Width="351" TextWrapping="Wrap" Height="394"><Run FontWeight="Bold" FontSize="14" FontFamily="Segoe UI" Text="—  for the creation of this guide and putting out constant updates to files and not dying of exhaustion and salt overdose"/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="14" FontFamily="Segoe UI" Text="—  for initial correct of English in guide"/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="14" FontFamily="Segoe UI" Text="—  for rewriting the guide, editing, constructive criticism, large amounts of salt and pistol rounds in the legs for every camera shot :^]"/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="14" FontFamily="Segoe UI" Text="—  In-house code writer with magical fingers for creating the updater utility"/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="14" FontFamily="Segoe UI" Text="—  Graphic designer of highest quality, top notch screenshot taker. Most sought after bachelor of the whole village"/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="14" Text="—  Special thanks goes to AWOG team for unexpected mention of our project &lt;3"/><LineBreak/><Run/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="14" Text="—  For all the feedback. GLHF and don't be toxic!"/></TextBlock>
 
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,134,0,0" SnapsToDevicePixels="False" TextAlignment="Center" Block.TextAlignment="Left"
                    Width="120" TextWrapping="Wrap"><InlineUIContainer>
@@ -80,16 +48,13 @@
                 <materialDesign:PackIcon SnapsToDevicePixels="False"
                     Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,7,0,0"/>
             </InlineUIContainer><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/Pussy_destroyeer" RequestNavigate="Hyperlink_RequestNavigate"
-                       TextDecorations="{x:Null}"><InlineUIContainer>
-                <materialDesign:PackIcon SnapsToDevicePixels="False"
-                    Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="0,42,0,0"/>
-            </InlineUIContainer><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
+                       TextDecorations="{x:Null}"><Run Text=" "/></Hyperlink><LineBreak/><Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
                        TextDecorations="{x:Null}"><Run Text=" "/></Hyperlink></TextBlock>
         <materialDesign:PackIcon SnapsToDevicePixels="False"
-            Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,359,0,204" RenderTransformOrigin="0.963,-0.08"/>
+            Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,363,0,200" RenderTransformOrigin="0.963,-0.08"/>
         <materialDesign:PackIcon SnapsToDevicePixels="False"
-                    Kind="Discord" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,431,0,132" RenderTransformOrigin="0.717,2.277"/>
-        <TextBlock Margin="103,441,518,132"><Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
+                    Kind="Discord" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,499,0,64" RenderTransformOrigin="0.717,2.277"/>
+        <TextBlock Margin="100,504,521,69"><Hyperlink BaselineAlignment="Center" NavigateUri="https://discord.gg/ufcUndH" RequestNavigate="Hyperlink_RequestNavigate"
                        TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="YOU"/></Hyperlink></TextBlock>
         <TextBlock Margin="100,367,449,206"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/zipitero/" RequestNavigate="Hyperlink_RequestNavigate"
                         TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Violet2Phoenix"/></Hyperlink></TextBlock>
@@ -97,6 +62,12 @@
                         TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="ImMobile"/></Hyperlink></TextBlock>
         <TextBlock Margin="100,242,496,331"><Hyperlink BaselineAlignment="Center" NavigateUri="https://steamcommunity.com/id/prothy/" RequestNavigate="Hyperlink_RequestNavigate"
                         TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="Morpho"/></Hyperlink></TextBlock>
+        <materialDesign:PackIcon SnapsToDevicePixels="False"
+            Kind="Youtube" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,434,0,129" RenderTransformOrigin="0.963,-0.08"/>
+        <TextBlock Margin="97,438,505,135"><Hyperlink BaselineAlignment="Center" NavigateUri="https://www.youtube.com/channel/UCFCyHiSHFgYcdQn_slsM6Mw" RequestNavigate="Hyperlink_RequestNavigate"
+                TextDecorations="{x:Null}"><Run Foreground="#FFBF0000" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" Text="AWOG"/></Hyperlink></TextBlock>
+        <materialDesign:PackIcon SnapsToDevicePixels="False"
+                    Kind="Steam" VerticalAlignment="Center" Foreground="{DynamicResource MaterialDesignBody}" Height="29" Width="36" Margin="54,310,0,253"/>
 
     </Grid>
 </UserControl>
