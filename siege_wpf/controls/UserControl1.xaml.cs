@@ -113,7 +113,7 @@ namespace siege_wpf.controls
             var fff = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
             fff.UseDescriptionForTitle = true;
             fff.ShowNewFolderButton = true;
-            fff.Description = "Choose Your R6S Root Folder";
+            fff.Description = "Choose your game root folder";
             if ((bool)fff.ShowDialog() && fff.SelectedPath != "")
             {
                 root_dir = fff.SelectedPath;
@@ -123,7 +123,7 @@ namespace siege_wpf.controls
                 {
                     DockColors("Normal");
                     showWarn = false;
-                    statusBox.Text = "Waiting for command";
+                    statusBox.Text = "waiting for command";
                 }
             }
         }
@@ -165,12 +165,12 @@ namespace siege_wpf.controls
                 //
 
                 //the message queue can be called from any thread
-                await Task.Factory.StartNew(() => snackQueue.Enqueue("JSON packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
+                await Task.Factory.StartNew(() => snackQueue.Enqueue(".json packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
                 if (showErr)
                 {
                     DockColors("Normal");
                     showErr = false;
-                    statusBox.Text = "Waiting for command";
+                    statusBox.Text = "waiting for command";
                 }
             }
             catch
@@ -179,7 +179,7 @@ namespace siege_wpf.controls
                 showUpd = false;
                 //MessageBox.Show("Check your internet connection! (cant load json)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 DockColors("Error");
-                await ShowDialogHost("Check your internet connection! (cant load json)");
+                await ShowDialogHost("Check your internet connection! (cant load .json)");
                 deserializedRoot = reserve;
             }
         }
@@ -189,7 +189,7 @@ namespace siege_wpf.controls
         {
             checkSem.WaitOne();
 
-            AppendStatusBox("Calculating hashes", 1);
+            AppendStatusBox("calculating checksum", 1);
 
             ChangeStatusEllipse("#FFEE1E1E", 1);
             ChangeStatusEllipse("#FF696969", 0);
@@ -224,7 +224,7 @@ namespace siege_wpf.controls
                     Application.Current.Dispatcher.Invoke((Action)async delegate {
 
                         DockColors("Error");
-                        await ShowDialogHost("Error While Loading JSON\nCheck Your Connection!");
+                        await ShowDialogHost("Error while fetching .json\nCheck your connection!");
                     });
                     showErr = true;
                     deserializedRoot = null;
@@ -241,7 +241,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("JSON packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
+                    await Task.Factory.StartNew(() => snackQueue.Enqueue(".json packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
                 });
                 deserializedRoot = JsonConvert.DeserializeObject<root_obj>(json);
 
@@ -268,7 +268,7 @@ namespace siege_wpf.controls
                 Application.Current.Dispatcher.Invoke((Action)async delegate {
                     DockColors("Warning");
 
-                    await ShowDialogHost("Please, Enter The folder");
+                    await ShowDialogHost("Please enter the folder");
                 });
                 showWarn = true;
                 showErr = false;
@@ -291,7 +291,7 @@ namespace siege_wpf.controls
                     Application.Current.Dispatcher.Invoke((Action)async delegate {
                         DockColors("Error");
 
-                        await ShowDialogHost2Buttons("Game executable does not match with the current version. Check if your game has been updated. But you can continue anyway.");
+                        await ShowDialogHost2Buttons("Game executable doesn't match with the current version. Check if your game has been updated. Continue?");
                     });
                     waitHandle.WaitOne();
                     waitingForHandle = false;
@@ -336,7 +336,7 @@ namespace siege_wpf.controls
             if (!Directory.Exists(root_dir))
             {
                 //currWnd.textBox1.Text = "Need to download All Shit! Current dir does not exists. Num of files to download:  " + arr_len;
-                AppendTextBox1("Need to download All Shit! Current dir does not exists. Num of files to download:  " + deserializedRoot.main_arr[selected_item].arr.Length, 1);
+                AppendTextBox1("Need to download all the shit! Current /dir/ does not exists. Number of files to download:  " + deserializedRoot.main_arr[selected_item].arr.Length, 1);
                 outdated = deserializedRoot.main_arr[selected_item].arr;
                 index = arr_len;
             }
@@ -389,7 +389,7 @@ namespace siege_wpf.controls
                         //currWnd.textBox1.Text += "File: " + filename + " is outdated!\n";
                         //currWnd.textBox1.Text += "File Hash:\t" + loc_hash + "\t!=\t" + a.hash;
                         //AppendTextBox1("File: " + filename + " is outdated!\nFile Hash:\t" + loc_hash + "\t!=\t" + a.hash);
-                        AppendTextBox1("File: " + a.name + " is outdated!\nIts Hash does not match to the example\n");
+                        AppendTextBox1("File: " + a.name + " is outdated!\nChecksum doesn't match!\n");
                         outdated[index] = a;
                         index++;
                         continue;
@@ -432,7 +432,7 @@ namespace siege_wpf.controls
         {
             if ((m_cancelTokenSource != null && !m_cancelTokenSource.IsCancellationRequested) || !download_cts.IsCancellationRequested)
             {
-                await ShowDialogHost2Buttons("Do You Really Want To Abort Current Operation?");
+                await ShowDialogHost2Buttons("Do you really want to abort current operation?");
                 if (dialogClose_atom)
                 {
                     if (m_cancelTokenSource != null)
@@ -450,7 +450,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted Successfully!", "OK", () => HandleUndoMethod()));
+                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
                 }
                 else
                     return;
@@ -478,11 +478,11 @@ namespace siege_wpf.controls
                 m_cancelTokenSource = null;
             if (showErr)
             {
-                statusBox.Text = "Check Your Connection";
+                statusBox.Text = "Check your connection";
             }
             else if (showWarn)
             {
-                statusBox.Text = "Enter the Folder";
+                statusBox.Text = "enter the folder";
             }
             else if (showUpd)
             {
@@ -491,7 +491,7 @@ namespace siege_wpf.controls
             }
             else
             {
-                statusBox.Text = "Waiting for command";
+                statusBox.Text = "waiting for command";
             }
             var brc = new BrushConverter();
             statusEllipse.Fill = (Brush)brc.ConvertFrom("#FFADFF2F");
@@ -504,7 +504,7 @@ namespace siege_wpf.controls
         {
             if ((m_cancelTokenSource != null && !m_cancelTokenSource.IsCancellationRequested) || !download_cts.IsCancellationRequested)
             {
-                await ShowDialogHost2Buttons("Do You Really Want To Abort Current Operation?");
+                await ShowDialogHost2Buttons("Do you really want to abort current operation?");
                 if (dialogClose_atom)
                 {
                     if (m_cancelTokenSource != null)
@@ -522,7 +522,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted Successfully!", "OK", () => HandleUndoMethod()));
+                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
                 }
                 else
                     return;
@@ -554,15 +554,15 @@ namespace siege_wpf.controls
 
             if (showErr)
             {
-                statusBox.Text = "Check Your Connection";
+                statusBox.Text = "Check your connection";
             }
             else if (showWarn)
             {
-                statusBox.Text = "Enter the Folder";
+                statusBox.Text = "enter the folder";
             }
             else
             {
-                statusBox.Text = "Waiting for command";
+                statusBox.Text = "waiting for command";
             }
             BrushConverter brc = new BrushConverter();
             statusEllipse.Fill = (Brush)brc.ConvertFrom("#FFADFF2F");
@@ -946,7 +946,7 @@ namespace siege_wpf.controls
         {
             if ((m_cancelTokenSource != null && !m_cancelTokenSource.IsCancellationRequested) || !download_cts.IsCancellationRequested)
             {
-                await ShowDialogHost2Buttons("Do You Really Want To Abort Current Operation?");
+                await ShowDialogHost2Buttons("Do you really want to abort current operation?");
                 if (dialogClose_atom)
                 {
                     if (m_cancelTokenSource != null)
@@ -964,7 +964,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted Successfully!", "OK", () => HandleUndoMethod()));
+                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
                 }
             }
         }
@@ -977,23 +977,23 @@ namespace siege_wpf.controls
             presentationSource.ContentRendered -= window_rendered;
             if (showErr)
             {
-                await ShowDialogHost("Error While Loading JSON\nCheck Your Connection!");
-                statusBox.Text = "Check Your Connection";
+                await ShowDialogHost("Error while fetching .json\nCheck your connection!");
+                statusBox.Text = "Check your connection";
             }
             else
             {
                 var txt = new Label();
 
-                var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(4000));
+                var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(3000));
                 SnackbarMain.MessageQueue = myMessageQueue;
                 SnackbarMain.Opacity = 0.85;
                 //SnackbarMain.ActionButtonStyle = (Style)FindResource("MaterialDesignSnackbarActionDarkButton");
                 var snackQueue = SnackbarMain.MessageQueue;
                 var snackMessage = SnackbarMain.Message;
                 //
-                statusBox.Text = "Waiting for command";
+                statusBox.Text = "waiting for command";
                 //the message queue can be called from any thread
-                await Task.Factory.StartNew(() => snackQueue.Enqueue("Ready To Work", "UNDERSTOOD", () => HandleUndoMethod()));
+                await Task.Factory.StartNew(() => snackQueue.Enqueue("Ready for work", "UNDERSTOOD", () => HandleUndoMethod()));
             }
         }
 
@@ -1048,7 +1048,7 @@ namespace siege_wpf.controls
                 statusBox.Text = "UPDATED";
                 textBox1.Text = "All files are up-to-date!\n\n";
                 showUpd = true;
-                var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(4000));
+                var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(3000));
                 SnackbarMain.MessageQueue = myMessageQueue;
                 SnackbarMain.Opacity = 0.85;
                 //SnackbarMain.ActionButtonStyle = (Style)FindResource("MaterialDesignSnackbarActionDarkButton");
@@ -1057,12 +1057,12 @@ namespace siege_wpf.controls
                 //
 
                 //the message queue can be called from any thread
-                await Task.Factory.StartNew(() => snackQueue.Enqueue("MY JOB IS DONE!", "YAY!", () => HandleUndoMethod()));
+                await Task.Factory.StartNew(() => snackQueue.Enqueue("MY JOB IS DONE!", "YIKES!", () => HandleUndoMethod()));
             }
             if (showErr == true)
             {
                 DockColors("Error");
-                statusBox.Text = "Check Your Connection";
+                statusBox.Text = "Check your connection";
             }
         }
 

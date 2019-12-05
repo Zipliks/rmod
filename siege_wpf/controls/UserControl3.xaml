@@ -9,7 +9,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="592" d:DesignWidth="650">
     <ScrollViewer Style="{StaticResource ScrollViewerStyle}" BorderBrush="#032b86"  Foreground="{StaticResource MainAccentColor}" CanContentScroll="True" VerticalScrollBarVisibility="Auto">
-        <Grid Margin="0,0,0,0">
+        <Grid Margin="0,0,0,0" Width="713">
 
         </Grid>
     </ScrollViewer>

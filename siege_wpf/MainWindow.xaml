@@ -220,6 +220,32 @@
                 </Button.Triggers>
             </Button>
 
+            <!--<Button x:Name="infoBtn2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Margin="0,120,0,0"  
+                        Style="{StaticResource MaterialDesignFlatMidBgButton}" materialDesign:ButtonAssist.CornerRadius="0 0 0 0" 
+                        materialDesign:RippleAssist.IsDisabled="True" Padding="0,0,0,0" Click="InfoBtn_Click"
+                        BorderThickness="0" Background="Transparent" Cursor="Arrow" SnapsToDevicePixels="False">
+                <materialDesign:PackIcon
+                        Kind="AboutOutline" Height="22" Width="22"/>
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation Duration="00:00:00.15" Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                                From="{DynamicResource LeftDockInfoColor}"    To="{DynamicResource LeftDockInfoHoverColor}"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="MouseLeave">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation Duration="00:00:00.15" Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" FillBehavior="Stop"
+                                                    From="{DynamicResource LeftDockInfoHoverColor}" To="{DynamicResource LeftDockInfoColor}"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>-->
+
             <!--<Button Click="OpenLeftDrawerHost"
                 Margin="0,20,631,532" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"  Style="{StaticResource MaterialDesignFlatMidBgButton}" materialDesign:ButtonAssist.CornerRadius="0 0 0 0" 
                         materialDesign:RippleAssist.IsDisabled="True" Padding="7,0,0,0"  Background="Transparent">
@@ -282,7 +308,7 @@
                         <Grid>
 
 
-                            <ContentControl x:Name="content1"/>
+                            <ContentControl x:Name="content1" Margin="0,0,-15,0"/>
                         </Grid>
 
                     

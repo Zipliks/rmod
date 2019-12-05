@@ -170,7 +170,7 @@ public class FileDownloader
         {
             //MessageBox.Show("Success!");
             label_glob.Content += "  -  DONE";
-            form1.uc.statusBox.Text = "Waiting for commands";
+            form1.uc.statusBox.Text = "waiting for commands";
             int fine_files=Convert.ToInt32(form1.uc.cpbLabel.Content.ToString().Substring(0, form1.uc.cpbLabel.Content.ToString().IndexOf("/")));
             int all_files = Convert.ToInt32(form1.uc.cpbLabel.Content.ToString().Substring(form1.uc.cpbLabel.Content.ToString().IndexOf("/") + 1));
             fine_files += 1;
@@ -204,7 +204,7 @@ public class FileDownloader
             var brc = new BrushConverter();
             label_glob.Content += "  -  STOPPED";
             progressBar_glob.Foreground = (Brush)brc.ConvertFrom("#FF1C0A3C");
-            form1.uc.statusBox.Text = "Waiting for commands";
+            form1.uc.statusBox.Text = "waiting for commands";
             form1.uc.statusEllipse.Fill = (Brush)brc.ConvertFrom("#FFADFF2F");
             form1.uc.statusEllipse.Stroke = (Brush)brc.ConvertFrom("#FFABADB3");
 
@@ -223,7 +223,7 @@ public class FileDownloader
             var brc = new BrushConverter();
             label_glob.Content += "  -  ERROR";
             progressBar_glob.Foreground = (Brush)brc.ConvertFrom("#FF1C0A3C");
-            form1.uc.statusBox.Text = "Waiting for commands";
+            form1.uc.statusBox.Text = "waiting for commands";
             form1.uc.statusEllipse.Fill = (Brush)brc.ConvertFrom("#FFADFF2F");
             form1.uc.statusEllipse.Stroke = (Brush)brc.ConvertFrom("#FFABADB3");
 
@@ -252,7 +252,7 @@ public class FileDownloader
         var brc = new BrushConverter();
         form1.uc.statusEllipse.Fill = (Brush)brc.ConvertFrom("#FFEE1E1E");
         form1.uc.statusEllipse.Stroke = (Brush)brc.ConvertFrom("#FF696969");
-        form1.uc.statusBox.Text = "Downloading";
+        form1.uc.statusBox.Text = "downloading";
         global_iter++;
 
         double percent = ((e.BytesReceived * 100) / total_bytes);
