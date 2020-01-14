@@ -28,7 +28,7 @@
             <Label Content="App. status:" HorizontalAlignment="Left" Margin="398,268,0,0" VerticalAlignment="Top"/>
 
 
-            <ComboBox x:Name="langCombo" materialDesign:HintAssist.Hint="Language" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" HorizontalAlignment="Left" Margin="492,25,0,0" VerticalAlignment="Top" Width="125" SelectionChanged="langCombo_SelectedChanged" Height="42"/>
+            <ComboBox x:Name="langCombo" materialDesign:HintAssist.Hint="I want" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" HorizontalAlignment="Left" Margin="492,25,0,0" VerticalAlignment="Top" Width="125" SelectionChanged="langCombo_SelectedChanged" Height="42" FontSize="14"/>
 
 
 
@@ -55,12 +55,12 @@
             </Border>
             <Label x:Name="cpbLabel"
                        Content="0/0"
-                       FontSize="70"
-                       Foreground="{DynamicResource MaterialDesignBody}" Margin="469,366,0,0" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent" Width="116"/>
+                       FontSize="50"
+                       Foreground="{DynamicResource MaterialDesignBody}" Margin="457,383,0,0" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent" Width="137" Height="84"/>
             <Viewbox HorizontalAlignment="Left" Height="177" Margin="436,334,-39,0" VerticalAlignment="Top" Width="253">
                 <cpb:CircularProgressBar
                     x:Name="cpb"
-                    Thickness="20" 
+                    Thickness="15" 
                     Radius="120"
                     Value="{Binding ProgressValue}"
                     Style="{StaticResource CircularProgressBarStyle}"

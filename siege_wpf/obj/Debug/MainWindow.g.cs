@@ -171,7 +171,7 @@ namespace siege_wpf {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/rmod;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/mod;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

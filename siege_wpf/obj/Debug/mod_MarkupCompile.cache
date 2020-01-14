@@ -1,14 +1,14 @@
-﻿rmod
+﻿mod
 
 
 winexe
 C#
 .cs
-D:\Projects\RMOD\siege_wpf\obj\Release\
+D:\Projects\RMOD\siege_wpf\obj\Debug\
 siege_wpf
 none
 false
-TRACE
+DEBUG;TRACE
 D:\Projects\RMOD\siege_wpf\App.xaml
 6104007681
 

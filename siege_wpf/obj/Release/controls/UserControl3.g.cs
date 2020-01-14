@@ -58,7 +58,7 @@ namespace siege_wpf.controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/rmod;component/controls/usercontrol3.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/mod;component/controls/usercontrol3.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\controls\UserControl3.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
