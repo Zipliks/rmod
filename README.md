@@ -2,7 +2,7 @@
 
 Well, you a here.
 
-And this is our small project -> **Siege Language Patcher**.
+And this is our small project -> **Siege Mod**.
 
 We call it **RMod** because it's for Rainbowsix and it will modificate your file system.
 
