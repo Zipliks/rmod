@@ -54,21 +54,21 @@
                 </ScrollViewer>
             </Border>
             <Label x:Name="cpbLabel"
-                       Content="0/0"
+                       Content="0/10"
                        FontSize="50"
-                       Foreground="{DynamicResource MaterialDesignBody}" Margin="457,383,0,0" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent" Width="137" Height="84"/>
+                       Foreground="{DynamicResource MaterialDesignBody}" Margin="456,382,59,0" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Transparent" Width="135" Height="84"/>
             <Viewbox HorizontalAlignment="Left" Height="177" Margin="436,334,-39,0" VerticalAlignment="Top" Width="253">
                 <cpb:CircularProgressBar
                     x:Name="cpb"
-                    Thickness="15" 
-                    Radius="120"
+                    Thickness="15"
+                    Radius="130"
                     Value="{Binding ProgressValue}"
                     Style="{StaticResource CircularProgressBarStyle}"
                     Fill="#00000000"
                     Stroke="{DynamicResource Normal_Color}"
                     StrokeThickness="5" 
                     StrokeMode="Middle"
-                    EndLineCap="Flat" Foreground="#FF17892B" BorderBrush="#FFBCBCBC" Background="#FF25B263" Width="255" SmallChange="0.1" ValueChanged="cpbValue_Changed" Height="176" 
+                    EndLineCap="Flat" Foreground="#FF17892B" BorderBrush="#FFBCBCBC" Background="#FF25B263" Width="302" SmallChange="0.1" ValueChanged="cpbValue_Changed" Height="159" 
             
                     />
             </Viewbox>

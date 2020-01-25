@@ -969,9 +969,6 @@ namespace siege_wpf.controls
             }
         }
 
-
-
-
         private async void window_rendered(object sender, EventArgs e)
         {
             presentationSource.ContentRendered -= window_rendered;
