@@ -12,7 +12,7 @@
         mc:Ignorable="d"
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Title="RSiege™ Mod [Github]" Height="627" Width="680" Initialized="window1_init" SnapsToDevicePixels="True"
+        Title="RMod for Rainbow 6S [by Ascension League]" Height="627" Width="680" Initialized="window1_init" SnapsToDevicePixels="True"
         Icon="images/logo.ico" ResizeMode="CanResize">
     <Window.Resources>
         <ResourceDictionary>

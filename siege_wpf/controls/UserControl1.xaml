@@ -25,38 +25,40 @@
             <TextBox x:Name="customJsonBox" HorizontalAlignment="Left" Height="25" Margin="27,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="270"  IsEnabled="False" Visibility="Hidden"/>
             <Button x:Name="btnLoadJson" Content="Load" HorizontalAlignment="Left" Margin="307,40,0,0" VerticalAlignment="Top" Width="70" IsEnabled="False" Click="BtnLoadJson_Click" Height="24" Padding="16,2,16,4" Visibility="Hidden"/>
             <TextBox x:Name="statusBox"  SnapsToDevicePixels="False" Cursor="Arrow" IsReadOnly="True"  HorizontalAlignment="Left" Height="25" Margin="470,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124"/>
-            <Label Content="App. status:" HorizontalAlignment="Left" Margin="398,268,0,0" VerticalAlignment="Top"/>
+            <Label Content="App. status:" HorizontalAlignment="Left" Margin="393,271,0,0" VerticalAlignment="Top" FontFamily="Comfortaa"/>
 
 
-            <ComboBox x:Name="langCombo" materialDesign:HintAssist.Hint="I want" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" HorizontalAlignment="Left" Margin="492,25,0,0" VerticalAlignment="Top" Width="125" SelectionChanged="langCombo_SelectedChanged" Height="42" FontSize="14"/>
+            <ComboBox x:Name="langCombo" materialDesign:HintAssist.Hint="Language i want is..." IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" HorizontalAlignment="Left" Margin="436,25,0,0" VerticalAlignment="Top" Width="181" SelectionChanged="langCombo_SelectedChanged" Height="42" FontSize="14">
+            </ComboBox>
 
 
 
-            <TextBox x:Name="textBox1"  Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" IsReadOnly="True" HorizontalAlignment="Left" Height="150" Margin="27,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" materialDesign:HintAssist.Hint="Files status"/>
-            <Label Content="Game ver:" HorizontalAlignment="Left" Margin="21,267,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.359,0.5"/>
-            <TextBox x:Name="textBox2" Text="CURR_VERSION"  HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="26" Margin="84,268,0,0" VerticalAlignment="Top" Width="125" IsReadOnly="True" TextOptions.TextFormattingMode="Display"/>
-            <Label Content="Current folder:" HorizontalAlignment="Left" Margin="26,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.5" Height="23"/>
-            <TextBox x:Name="folderBox"  SnapsToDevicePixels="False" Cursor="Arrow" HorizontalAlignment="Left" Height="25" IsReadOnly="True" Margin="32,42,0,0" VerticalContentAlignment="Center" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="321"/>
+            <TextBox x:Name="textBox1"  Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" IsReadOnly="True" HorizontalAlignment="Left" Height="150" Margin="27,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" materialDesign:HintAssist.Hint="Files status" FontFamily="Bender"/>
+            <Label Content="Game ver:" HorizontalAlignment="Left" Margin="26,267,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.359,0.5" FontFamily="Comfortaa" FontWeight="Bold" FontSize="12"/>
+            <TextBox x:Name="textBox2" Text="CURR_VERSION"  HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="26" Margin="98,264,0,0" VerticalAlignment="Top" Width="125" IsReadOnly="True" TextOptions.TextFormattingMode="Display" FontFamily="Comfortaa" FontSize="14"/>
+            <Label Content="Current folder:" HorizontalAlignment="Left" Margin="26,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.5" Height="23" FontFamily="Comfortaa" FontSize="12"/>
+            <TextBox x:Name="folderBox"  SnapsToDevicePixels="False" Cursor="Arrow" HorizontalAlignment="Left" Height="25" IsReadOnly="True" Margin="32,42,0,0" VerticalContentAlignment="Center" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="283" FontFamily="Bender"/>
             <!--<CheckBox x:Name="checkBox_Folder" Content="Enter Manually" HorizontalAlignment="Left" Margin="229,299,0,0" VerticalAlignment="Top" Checked="checkBoxFolder_Checked" Unchecked="checkBoxFolder_Unchecked"/>-->
 
             <ToggleButton Style="{StaticResource MaterialDesignSwitchToggleButton}" ToolTip="Enter folder manually" Checked="checkBoxFolder_Checked" Unchecked="checkBoxFolder_Unchecked" Margin="29,76,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.304,0.519"/>
-            <Label x:Name="labelFold"  Content="Enter manually" HorizontalAlignment="Left" Margin="60,71,0,0" VerticalAlignment="Top" IsEnabled="False" FontWeight="Bold"/>
+            <Label x:Name="labelFold"  Content="Enter manually" HorizontalAlignment="Left" Margin="61,73,0,0" VerticalAlignment="Top" IsEnabled="False" FontWeight="Bold" FontFamily="Bender" Height="21"/>
 
 
-            <Button x:Name="btnFolder" Content="Explorer" HorizontalAlignment="Left" Margin="364,42,0,0" VerticalAlignment="Top" Width="65" Click="BtnFolder_Click" FontSize="14" Padding="5,0,6,3" Height="25" />
-            <Label Content="Download screen:" HorizontalAlignment="Left" Margin="26,298,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+            <Button x:Name="btnFolder" Content="Explorer" HorizontalAlignment="Left" Margin="320,44,0,0" VerticalAlignment="Top" Width="65" Click="BtnFolder_Click" FontSize="12" Padding="5,0,6,3" Height="23" FontFamily="Comfortaa" RenderTransformOrigin="0.5,0.5" />
+            <Label Content="Download status:" HorizontalAlignment="Left" Margin="26,297,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Comfortaa"/>
 
             <Border BorderThickness="1" BorderBrush="{DynamicResource MaterialDesignBody}" CornerRadius="6" HorizontalAlignment="Left" Height="177" VerticalAlignment="Top" Width="376" Margin="32,334,0,0">
-                <ScrollViewer Style="{StaticResource ScrollViewerStyle}" BorderBrush="#032b86"  Foreground="{StaticResource MainAccentColor}" HorizontalAlignment="Left" Margin="-1" Width="376" CanContentScroll="True" VerticalScrollBarVisibility="Auto" Height="177" VerticalAlignment="Top">
+                <ScrollViewer Style="{StaticResource ScrollViewerStyle}" BorderBrush="#032b86"  Foreground="{StaticResource MainAccentColor}" HorizontalAlignment="Left" Margin="-1" Width="376" CanContentScroll="True" VerticalScrollBarVisibility="Auto" Height="177" VerticalAlignment="Top" FontFamily="Bender">
                     <Grid x:Name="gridDownloadScreen" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="360" RenderTransformOrigin="0.5,0.5" >
 
                     </Grid>
                 </ScrollViewer>
             </Border>
             <Label x:Name="cpbLabel"
-                       Content="0/10"
+                       Content="12/12"
                        FontSize="50"
-                       Foreground="{DynamicResource MaterialDesignBody}" Margin="456,382,59,0" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Transparent" Width="135" Height="84"/>
+                       Foreground="{DynamicResource MaterialDesignBody}" Margin="456,394,61,0" TextOptions.TextFormattingMode="Display" VerticalAlignment="Top" HorizontalAlignment="Center"
+                   Background="Transparent" Width="133" Height="60" FontFamily="Comfortaa" RenderTransformOrigin="1,1" ClipToBounds="True"/>
             <Viewbox HorizontalAlignment="Left" Height="177" Margin="436,334,-39,0" VerticalAlignment="Top" Width="253">
                 <cpb:CircularProgressBar
                     x:Name="cpb"
@@ -68,22 +70,20 @@
                     Stroke="{DynamicResource Normal_Color}"
                     StrokeThickness="5" 
                     StrokeMode="Middle"
-                    EndLineCap="Flat" Foreground="#FF17892B" BorderBrush="#FFBCBCBC" Background="#FF25B263" Width="302" SmallChange="0.1" ValueChanged="cpbValue_Changed" Height="159" 
-            
-                    />
+                    EndLineCap="Flat" Foreground="#FF17892B" BorderBrush="#FFBCBCBC" Background="#FF25B263" Width="302" SmallChange="0.1" ValueChanged="cpbValue_Changed" Height="159"/>
             </Viewbox>
 
 
-            <Button x:Name="button2" Style="{StaticResource buttonHover}" HorizontalAlignment="Left" Margin="387,334,0,0" VerticalAlignment="Top" Width="21" Height="21" OpacityMask="Black" Click="Button2_Click">
+            <Button x:Name="button2" Style="{StaticResource buttonHover}" HorizontalAlignment="Left" Margin="387,334,0,0" VerticalAlignment="Top" Width="21" Height="21" OpacityMask="Black" Click="Button2_Click" FontFamily="Comfortaa">
                 <Button.Background>
                     <ImageBrush ImageSource="../images/x_mark.png"/>
                 </Button.Background>
 
             </Button>
-            <Button x:Name="checkBtn" Content="Check" HorizontalAlignment="Left" Margin="142,530,0,0" VerticalAlignment="Top" Width="75" Click="CheckBtn_Click"/>
-            <Button x:Name="downloadBtn" Content="Download" HorizontalAlignment="Left" Margin="32,530,0,0" VerticalAlignment="Top" Width="105" Click="DownloadBtn_Click"/>
+            <Button x:Name="checkBtn" Content="Check" HorizontalAlignment="Left" Margin="157,530,0,0" VerticalAlignment="Top" Width="90" Click="CheckBtn_Click" FontFamily="Comfortaa" FontSize="16"/>
+            <Button x:Name="downloadBtn" Content="Download" HorizontalAlignment="Left" Margin="32,530,0,0" VerticalAlignment="Top" Width="120" Click="DownloadBtn_Click" FontFamily="Comfortaa" FontSize="16"/>
             <Ellipse x:Name="statusEllipse" Fill="GreenYellow"  HorizontalAlignment="Left" Height="17"  Margin="600,276,0,0" VerticalAlignment="Top" Width="17" Stroke="#FFABADB3" StrokeThickness="0.7" RenderTransformOrigin="23.471,-9.471"/>
-            <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="333,530,0,0" VerticalAlignment="Top" Width="75" Click="BtnCancel_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="316,530,0,0" VerticalAlignment="Top" Width="92" Click="BtnCancel_Click" FontFamily="Comfortaa" FontSize="16"/>
 
             <materialDesign:Snackbar
                         IsActive="False"

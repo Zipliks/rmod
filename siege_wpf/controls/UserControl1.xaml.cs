@@ -156,7 +156,7 @@ namespace siege_wpf.controls
                 outdated = new file_url[deserializedRoot.main_arr[selected_item].arr.Length];
                 cpbLabel.Content = 0 + "/" + deserializedRoot.main_arr[langCombo.SelectedIndex].arr.Length;
                 //MessageBox.Show("JSON packages has been loaded successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(4000));
+                var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(2000));
                 SnackbarMain.MessageQueue = myMessageQueue;
                 SnackbarMain.Opacity = 0.85;
                 //SnackbarMain.ActionButtonStyle = (Style)FindResource("MaterialDesignSnackbarActionDarkButton");
@@ -165,7 +165,7 @@ namespace siege_wpf.controls
                 //
 
                 //the message queue can be called from any thread
-                await Task.Factory.StartNew(() => snackQueue.Enqueue(".json packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
+                // await Task.Factory.StartNew(() => snackQueue.Enqueue(".json packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
                 if (showErr)
                 {
                     DockColors("Normal");
@@ -189,7 +189,7 @@ namespace siege_wpf.controls
         {
             checkSem.WaitOne();
 
-            AppendStatusBox("calculating checksum", 1);
+            AppendStatusBox("calculating hash", 1);
 
             ChangeStatusEllipse("#FFEE1E1E", 1);
             ChangeStatusEllipse("#FF696969", 0);
@@ -235,13 +235,13 @@ namespace siege_wpf.controls
                 //AppendTextBox1("Got JSON from webserver", 1);
                 AppendTextBox1("Successfully connected to webserver", 1);
                 Application.Current.Dispatcher.Invoke((Action)async delegate {
-                    var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(4000));
+                    var myMessageQueue = new SnackbarMessageQueue(TimeSpan.FromMilliseconds(2000));
                     SnackbarMain.MessageQueue = myMessageQueue;
                     SnackbarMain.Opacity = 0.85;
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue(".json packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
+                   // await Task.Factory.StartNew(() => snackQueue.Enqueue(".json packages has been loaded successfully!", "🙂", () => HandleUndoMethod()));
                 });
                 deserializedRoot = JsonConvert.DeserializeObject<root_obj>(json);
 
@@ -372,7 +372,7 @@ namespace siege_wpf.controls
                     else if (new FileInfo(filename).Length != a.bytes)
                     {
                         //currWnd.textBox1.Text += "File: " + filename + " is outdated!\nHis size: " + new FileInfo(filename).Length + " needs to be: " + a.bytes;
-                        AppendTextBox1("File: " + a.name + " is outdated!\nHis size: " + new FileInfo(filename).Length + " needs to be: " + a.bytes + "\n");
+                        AppendTextBox1("File: " + a.name + " is outdated!\nIts size: " + new FileInfo(filename).Length + " Expected size: " + a.bytes + "\n");
                         outdated[index] = a;
                         index++;
                         continue;
@@ -450,7 +450,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
+                  //  await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
                 }
                 else
                     return;
@@ -522,7 +522,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
+                   // await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
                 }
                 else
                     return;
@@ -608,7 +608,7 @@ namespace siege_wpf.controls
 
             using (var algo = new T())
             {
-                var buffer = new byte[1200000];
+                var buffer = new byte[120000];
                 int read;
 
                 // compute the hash on 8KiB blocks  // NEW 1MB blocks!
@@ -964,7 +964,7 @@ namespace siege_wpf.controls
                     var snackQueue = SnackbarMain.MessageQueue;
                     var snackMessage = SnackbarMain.Message;
 
-                    await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
+                  //  await Task.Factory.StartNew(() => snackQueue.Enqueue("Aborted successfully!", "OK", () => HandleUndoMethod()));
                 }
             }
         }
@@ -990,7 +990,7 @@ namespace siege_wpf.controls
                 //
                 statusBox.Text = "waiting for command";
                 //the message queue can be called from any thread
-                await Task.Factory.StartNew(() => snackQueue.Enqueue("Ready for work", "UNDERSTOOD", () => HandleUndoMethod()));
+                // await Task.Factory.StartNew(() => snackQueue.Enqueue("Ready for work", "UNDERSTOOD", () => HandleUndoMethod()));
             }
         }
 
@@ -1054,7 +1054,7 @@ namespace siege_wpf.controls
                 //
 
                 //the message queue can be called from any thread
-                await Task.Factory.StartNew(() => snackQueue.Enqueue("MY JOB IS DONE!", "YIKES!", () => HandleUndoMethod()));
+                await Task.Factory.StartNew(() => snackQueue.Enqueue("FINISHED!", "OK", () => HandleUndoMethod()));
             }
             if (showErr == true)
             {

@@ -8,11 +8,11 @@ using System.Windows;
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("RMod")]
-[assembly: AssemblyDescription("RMod for Rainbow Six: Siege")]
+[assembly: AssemblyDescription("Automated utility for language change in R6S")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("-=Alex Novikov=- & RMod Team")]
+[assembly: AssemblyCompany("Imperium League")]
 [assembly: AssemblyProduct("RMod")]
-[assembly: AssemblyCopyright("Alex Novikov Copyright ©  2019")]
+[assembly: AssemblyCopyright("Imperium League © 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,7 +51,7 @@ using System.Windows;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.9.0.0")]
-[assembly: AssemblyFileVersion("0.9.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: NeutralResourcesLanguage("en")]
 
