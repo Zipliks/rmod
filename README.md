@@ -1,4 +1,4 @@
-> da fuk we doin ova hir 
+> Ave Ascension League
 
 Well, you a here.
 
@@ -22,4 +22,6 @@ Blitz round:
 * [ ]  smth new & breathtaking, idk whatever it could be
 
 
-
+Wanna contribute or just chat with us?
+Well, join the official discord channel!
+<a href="https://discord.gg/ufcUndH"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
