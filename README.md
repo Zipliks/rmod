@@ -2,9 +2,9 @@
 
 Well, you a here.
 
-And this is our small project -> **Siege Mod**.
+And this is our small project -> **Rainbow 6S Mod**.
 
-We call it **RMod** because it's for Rainbowsix and it will modificate your file system.
+We call it **RMod** because it's for Rainbow 6S and it will modificate your file system.
 
 Blitz round:
 * No, there are no viruses in here. You are allowed check it yourself >> virustotal.com
@@ -12,6 +12,7 @@ Blitz round:
 * Why the app is only around 3 mb? It downloads everything from cloud
 * You don't really need to download the app every time game gets updated. Most of the times changes come to the design
 * Yes, press the "Check" button if something is broken. That's what it's for. It may or may not fix everything
+* Unfortunately we can't implement self-update system. Maybe later. Or not. 
 
 **To do list:**
 * [x]  A lil bit recoding
