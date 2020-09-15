@@ -1,5 +1,10 @@
-> Ave Ascension League
+Wanna contribute or just chat with us?
+Well, join the official discord channel!
 
+<a href="https://discord.gg/ufcUndH"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
+
+> Ave Ascension League
+***
 Well, you a here.
 
 And this is our small project -> **Rainbow 6S Mod**.
@@ -20,9 +25,3 @@ Blitz round:
 * [x]  Detailed guides for the errors. Yes, it's already done. But external for now
 * [ ]  Installation guide has been added to the app itself
 * [ ]  smth new & breathtaking, idk whatever it could be
-
-
-Wanna contribute or just chat with us?
-Well, join the official discord channel!
-
-<a href="https://discord.gg/ufcUndH"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
