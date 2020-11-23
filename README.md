@@ -1,3 +1,6 @@
+# Outdated and abandoned. If you want update it, it's up to you.
+# All languages are now free and downloadable through Connect.
+
 Wanna contribute or just chat with us?
 Well, join the official discord channel!
 
