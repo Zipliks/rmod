@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Development\RMOD\siege_wpf\obj\Debug\
+D:\Projects\RMOD\siege_wpf\obj\x64\Debug\
 siege_wpf
 none
 false
-DEBUG;TRACE
-D:\Development\RMOD\siege_wpf\App.xaml
+
+D:\Projects\RMOD\siege_wpf\App.xaml
 6104007681
 
-17343571253
-281507236894
+16-208814944
+29-280309267
 circClasses\Scrollbar.xaml;controls\UserControl1.xaml;controls\UserControl2.xaml;controls\UserControl3.xaml;MainWindow.xaml;circClasses\styles.xaml;
 
 True
