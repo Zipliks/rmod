@@ -36,5 +36,5 @@ Well, join the official discord channel!
 ***
 
 ## Disclaimer
-This material is provided for informational, educational and scientific research purposes.
-This software is provided for your use "as-is", we do not bear any responsibility for loss of data and any other damages incurred when using the software.
+* This material is provided for informational, educational and scientific research purposes.
+* This software is provided for your use "as-is", we do not bear any responsibility for loss of data and any other damages incurred when using the software.
