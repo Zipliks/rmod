@@ -1,7 +1,9 @@
-# Outdated and abandoned. 
-# If you want update it, it's up to you.
-# All languages are now free.
+# Obsolete 
+English language is now free for CIS region, it's included in the base game depot.
+
 **Use Ubisoft Connect if you are interested in any languages other than English**
+
+***
 
 Wanna contribute or just chat with us?
 Well, join the official discord channel!
