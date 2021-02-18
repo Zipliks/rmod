@@ -1,17 +1,11 @@
-# Obsolete 
+## Obsolete
+Working on a new version.
 English language is now free for CIS region, it's included in the base game depot.
 
 **Use Ubisoft Connect if you are interested in any languages other than English**
 
-***
 
-Wanna contribute or just chat with us?
-Well, join the official discord channel!
-
-<a href="https://discord.gg/ufcUndH"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
-
-> Ave Ascension League
-***
+# About RMod
 Well, you a here.
 
 And this is our small project -> **Rainbow 6S Mod**.
@@ -32,3 +26,15 @@ Blitz round:
 * [x]  Detailed guides for the errors. Yes, it's already done. But external for now
 * [ ]  Installation guide has been added to the app itself
 * [ ]  smth new & breathtaking, idk whatever it could be
+
+***
+## Social
+Wanna contribute or just chat with us?
+Well, join the official discord channel!
+
+<a href="https://discord.gg/ufcUndH"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
+***
+
+## Disclaimer
+This material is provided for informational, educational and scientific research purposes.
+This software is provided for your use "as-is", we do not bear any responsibility for loss of data and any other damages incurred when using the software.
