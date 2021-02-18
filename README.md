@@ -27,13 +27,13 @@ Blitz round:
 * [ ]  Installation guide has been added to the app itself
 * [ ]  smth new & breathtaking, idk whatever it could be
 
-***
+
 ## Social
 Wanna contribute or just chat with us?
 Well, join the official discord channel!
 
 <a href="https://discord.gg/ufcUndH"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
-***
+
 
 ## Disclaimer
 * This material is provided for informational, educational and scientific research purposes.
