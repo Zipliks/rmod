@@ -25,7 +25,9 @@ Blitz round:
 **Nah, no more "to-do" or "near future plans"**
 
 ## Social
-We still have the Discord server
+We still have the Discord server.
+
+It's kinda dead, but not for us (should we call ourselves "Underground" now...?)
 
 <a href="https://discord.gg/nXfZqTdGze"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
 
