@@ -1,8 +1,8 @@
 ## Obsolete
-Working on a new version.
-English language is now free for CIS region, it's included in the base game depot.
+Working on a "brand new" utility.
+English language is now free for CIS region, it's included in the main game depot.
 
-**Use Ubisoft Connect if you are interested in any languages other than English**
+**Use Ubisoft Connect if you are interested in any languages except English**
 
 
 # About RMod
@@ -10,7 +10,8 @@ Well, you a here.
 
 And this is our small project -> **Rainbow 6S Mod**.
 
-We call it **RMod** because it's for Rainbow 6S and it will modificate your file system.
+We call it **RMod** because it's for Rainbow 6S (obviously).
+And it modificates (change; add or replace files) your game file system.
 
 Blitz round:
 * No, there are no viruses in here. You are allowed check it yourself >> virustotal.com
@@ -20,17 +21,10 @@ Blitz round:
 * Yes, press the "Check" button if something is broken. That's what it's for. It may or may not fix everything
 * Unfortunately we can't implement self-update system. Maybe later. Or not. 
 
-**To do list:**
-* [x]  A lil bit recoding
-* [ ]  Addons system. We have a lot of ideas but don't wanna integrate 'em without user's acception
-* [x]  Detailed guides for the errors. Yes, it's already done. But external for now
-* [ ]  Installation guide has been added to the app itself
-* [ ]  smth new & breathtaking, idk whatever it could be
-
+**Nah, no more "to-do" or "near future plans"**
 
 ## Social
-Wanna contribute or just chat with us?
-Well, join the official discord channel!
+We still have the Discord server
 
 <a href="https://discord.gg/nXfZqTdGze"><img src="https://raw.githubusercontent.com/lemasato/POE-Trades-Companion/master/resources/imgs/Discord_big.png" height=50></a>
 
