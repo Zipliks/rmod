@@ -7,7 +7,7 @@ English language is now free for CIS region, it's included in the main game depo
 
 
 # About RMod
-Well, you a here.
+Well, you are here.
 
 And this is our small project -> **Rainbow 6S Mod**.
 
